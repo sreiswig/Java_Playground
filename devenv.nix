@@ -9,7 +9,10 @@
 
   # https://devenv.sh/languages/
   # languages.rust.enable = true;
-  languages.java.enable = true;
+  languages.java = {
+    enable = true;
+    jdk.package = pkgs.jdk23;
+  };
 
   # https://devenv.sh/processes/
   # processes.cargo-watch.exec = "cargo-watch";
